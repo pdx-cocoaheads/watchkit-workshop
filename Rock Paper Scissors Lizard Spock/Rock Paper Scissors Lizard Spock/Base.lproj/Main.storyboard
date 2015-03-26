@@ -36,7 +36,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loY-BY-vN7" userLabel="Spock">
-                                        <rect key="frame" x="234" y="156.5" width="100" height="100"/>
+                                        <rect key="frame" x="234" y="157" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="N2y-Nn-pur">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -50,7 +50,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-jo-0AJ" userLabel="Lizard">
-                                        <rect key="frame" x="8" y="156.5" width="100" height="100"/>
+                                        <rect key="frame" x="8" y="157" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="fgZ-kV-l00">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -92,7 +92,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.55601674318313599" green="0.55832213163375854" blue="0.71869200468063354" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="loY-BY-vN7" secondAttribute="centerY" id="7ye-2R-M1C"/>
                                     <constraint firstAttribute="centerX" secondItem="uH5-9n-uHT" secondAttribute="centerX" id="EMp-yU-Bdu"/>
@@ -112,12 +112,63 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgK-bc-zlH" userLabel="Computer View">
+                                <rect key="frame" x="16" y="434" width="568" height="158"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer's Choice:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-EC-NcZ">
+                                        <rect key="frame" x="8" y="8" width="172" height="142"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper disproves Spock. You Win!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
+                                        <rect key="frame" x="296" y="8" width="264" height="142"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-CQ-HpS">
+                                        <rect key="frame" x="188" y="29" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lgh-K5-CcR">
+                                                <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="100" id="luq-OR-4y9">
+                                                <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="leading" secondItem="vUa-CQ-HpS" secondAttribute="trailing" constant="8" id="3sG-vj-c4d"/>
+                                    <constraint firstAttribute="centerY" secondItem="Qoo-EC-NcZ" secondAttribute="centerY" id="8vp-E1-HLU"/>
+                                    <constraint firstAttribute="centerX" secondItem="vUa-CQ-HpS" secondAttribute="centerX" constant="46" id="9eR-PN-Jpo">
+                                        <variation key="widthClass=compact" constant="32"/>
+                                    </constraint>
+                                    <constraint firstAttribute="centerY" secondItem="hhh-Zd-ibn" secondAttribute="centerY" id="HOH-zd-yMe"/>
+                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="KuV-MH-6sR"/>
+                                    <constraint firstAttribute="centerY" secondItem="vUa-CQ-HpS" secondAttribute="centerY" id="VSJ-lu-fC3"/>
+                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="aKS-QM-uDW"/>
+                                    <constraint firstItem="vUa-CQ-HpS" firstAttribute="leading" secondItem="Qoo-EC-NcZ" secondAttribute="trailing" constant="8" id="aM3-YB-q1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhh-Zd-ibn" secondAttribute="bottom" constant="8" id="emF-qB-JEt"/>
+                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" constant="8" id="wKe-c2-vQW"/>
+                                    <constraint firstAttribute="trailing" secondItem="hhh-Zd-ibn" secondAttribute="trailing" constant="8" id="yC7-Fo-qTd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qoo-EC-NcZ" secondAttribute="bottom" constant="8" id="yU2-Tu-rSD"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="vgK-bc-zlH" firstAttribute="top" secondItem="e8s-Q4-sVI" secondAttribute="bottom" id="6aI-bo-Exl"/>
+                            <constraint firstItem="e8s-Q4-sVI" firstAttribute="width" secondItem="vgK-bc-zlH" secondAttribute="width" id="CYP-65-ahY"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FCL-VT-RHD"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dMe-Ze-Z8E"/>
                             <constraint firstAttribute="height" secondItem="e8s-Q4-sVI" secondAttribute="height" multiplier="1.45" id="h0S-ML-oO5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vgK-bc-zlH" secondAttribute="bottom" constant="8" id="kPc-JR-03g"/>
+                            <constraint firstAttribute="centerX" secondItem="vgK-bc-zlH" secondAttribute="centerX" id="pWA-PO-D38"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sJI-Qb-rBZ"/>
                         </constraints>
                     </view>
