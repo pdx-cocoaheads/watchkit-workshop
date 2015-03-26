@@ -19,10 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-Q4-sVI" userLabel="Buttons View">
-                                <rect key="frame" x="16" y="20" width="568" height="414"/>
+                                <rect key="frame" x="16" y="28" width="568" height="414"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXs-Wc-bJy" userLabel="Rock">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXs-Wc-bJy" userLabel="Rock">
                                         <rect key="frame" x="234" y="8" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" label="rock">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="23l-qf-i7v">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -34,9 +37,15 @@
                                         <state key="normal" image="rock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHl-6c-WA4"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loY-BY-vN7" userLabel="Spock">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loY-BY-vN7" userLabel="Spock">
                                         <rect key="frame" x="234" y="157" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" label="spock">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="N2y-Nn-pur">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -48,9 +57,15 @@
                                         <state key="normal" image="spock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeX-IF-l3K"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-jo-0AJ" userLabel="Lizard">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-jo-0AJ" userLabel="Lizard">
                                         <rect key="frame" x="8" y="157" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" label="lizard">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="fgZ-kV-l00">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -62,9 +77,15 @@
                                         <state key="normal" image="lizard.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uB0-yd-OhN"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-H1-tdJ" userLabel="Paper">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-H1-tdJ" userLabel="Paper">
                                         <rect key="frame" x="460" y="157" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" label="paper">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="c8B-iv-4Ui">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -73,12 +94,18 @@
                                                 <variation key="heightClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
-                                        <state key="normal" image="paper-highlighted.png">
+                                        <state key="normal" image="paper.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dc-rP-tJs"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH5-9n-uHT" userLabel="Scissors">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH5-9n-uHT" userLabel="Scissors">
                                         <rect key="frame" x="234" y="306" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" label="scissors">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="mJh-rz-4SR">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -90,6 +117,9 @@
                                         <state key="normal" image="scissors.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4u-2F-LL7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.55601674318313599" green="0.55832213163375854" blue="0.71869200468063354" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,22 +143,22 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgK-bc-zlH" userLabel="Computer View">
-                                <rect key="frame" x="16" y="434" width="568" height="158"/>
+                                <rect key="frame" x="16" y="442" width="568" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer's Choice:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-EC-NcZ">
-                                        <rect key="frame" x="8" y="8" width="172" height="142"/>
+                                        <rect key="frame" x="8" y="8" width="172" height="134"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper disproves Spock. You Win!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
-                                        <rect key="frame" x="296" y="8" width="264" height="142"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your choice." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
+                                        <rect key="frame" x="296" y="8" width="264" height="134"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock-highlighted.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-CQ-HpS">
-                                        <rect key="frame" x="188" y="29" width="100" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-CQ-HpS">
+                                        <rect key="frame" x="188" y="25" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="lgh-K5-CcR">
                                                 <variation key="heightClass=compact" constant="80"/>
@@ -164,7 +194,7 @@
                         <constraints>
                             <constraint firstItem="vgK-bc-zlH" firstAttribute="top" secondItem="e8s-Q4-sVI" secondAttribute="bottom" id="6aI-bo-Exl"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="width" secondItem="vgK-bc-zlH" secondAttribute="width" id="CYP-65-ahY"/>
-                            <constraint firstItem="e8s-Q4-sVI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FCL-VT-RHD"/>
+                            <constraint firstItem="e8s-Q4-sVI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="FCL-VT-RHD"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dMe-Ze-Z8E"/>
                             <constraint firstAttribute="height" secondItem="e8s-Q4-sVI" secondAttribute="height" multiplier="1.45" id="h0S-ML-oO5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="vgK-bc-zlH" secondAttribute="bottom" constant="8" id="kPc-JR-03g"/>
@@ -172,6 +202,10 @@
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sJI-Qb-rBZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="computerChoiceImage" destination="vUa-CQ-HpS" id="kit-C6-qJr"/>
+                        <outlet property="resultsLabel" destination="hhh-Zd-ibn" id="YLS-OP-k7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,10 +214,9 @@
     </scenes>
     <resources>
         <image name="lizard.png" width="307" height="307"/>
-        <image name="paper-highlighted.png" width="307" height="307"/>
+        <image name="paper.png" width="307" height="307"/>
         <image name="rock.png" width="307" height="307"/>
         <image name="scissors.png" width="307" height="307"/>
-        <image name="spock-highlighted.png" width="307" height="307"/>
         <image name="spock.png" width="307" height="307"/>
     </resources>
 </document>

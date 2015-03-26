@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94290CDD1AC486CC00882299 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Choice.swift */; };
 		948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54121AC3725100CCF68F /* AppDelegate.swift */; };
 		948E54151AC3725100CCF68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54141AC3725100CCF68F /* ViewController.swift */; };
 		948E54181AC3725100CCF68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E54161AC3725100CCF68F /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94290CDC1AC486CC00882299 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		948E540D1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors Lizard Spock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E54111AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948E54121AC3725100CCF68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				948E54121AC3725100CCF68F /* AppDelegate.swift */,
 				948E54141AC3725100CCF68F /* ViewController.swift */,
 				948E54161AC3725100CCF68F /* Main.storyboard */,
+				94290CDC1AC486CC00882299 /* Choice.swift */,
 				948E54191AC3725100CCF68F /* Images.xcassets */,
 				948E541B1AC3725100CCF68F /* LaunchScreen.xib */,
 				948E54101AC3725100CCF68F /* Supporting Files */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94290CDD1AC486CC00882299 /* Choice.swift in Sources */,
 				948E54151AC3725100CCF68F /* ViewController.swift in Sources */,
 				948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */,
 			);
@@ -455,6 +459,7 @@
 				948E542E1AC3725100CCF68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "Rock Paper Scissors Lizard SpockTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +468,7 @@
 				948E54311AC3725100CCF68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
