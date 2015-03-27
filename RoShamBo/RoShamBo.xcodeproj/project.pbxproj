@@ -32,7 +32,7 @@
 			containerPortal = 948E54051AC3725100CCF68F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 948E540C1AC3725100CCF68F;
-			remoteInfo = "RoShamBo";
+			remoteInfo = RoShamBo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -169,7 +169,7 @@
 			dependencies = (
 			);
 			name = RoShamBo;
-			productName = "RoShamBo";
+			productName = RoShamBo;
 			productReference = 948E540D1AC3725100CCF68F /* RoShamBo.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -187,7 +187,7 @@
 				948E54241AC3725100CCF68F /* PBXTargetDependency */,
 			);
 			name = RoShamBoTests;
-			productName = "RoShamBoTests";
+			productName = RoShamBoTests;
 			productReference = 948E54221AC3725100CCF68F /* RoShamBoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -390,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "RoShamBo/Info.plist";
+				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
 			};
@@ -400,7 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "RoShamBo/Info.plist";
+				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
 			};
@@ -418,7 +418,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RoShamBoTests/Info.plist";
+				INFOPLIST_FILE = RoShamBoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = RoShamBoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
@@ -433,7 +433,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RoShamBoTests/Info.plist";
+				INFOPLIST_FILE = RoShamBoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = RoShamBoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
