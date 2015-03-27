@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum Choice: Int {
+public enum Choice: Int {
     case Rock = 1
     case Paper
     case Scissors
     case Spock
     case Lizard
 
-    var name: String {
+    public var name: String {
         switch self {
         case .Rock:
             return "rock"
@@ -30,16 +30,16 @@ enum Choice: Int {
         }
     }
 
-    static func all() -> [Choice] {
+    public static func all() -> [Choice] {
         return [.Rock, .Paper, .Scissors, .Spock, .Lizard]
     }
 
-    static func random() -> Choice {
+    public static func random() -> Choice {
         var c = Int(arc4random_uniform(UInt32(5))) + 1
         return Choice(rawValue: c)!
     }
 
-    func verb(other: Choice) -> String {
+    public func verb(other: Choice) -> String {
         if other == self {
             return ""
         }
@@ -90,12 +90,12 @@ enum Choice: Int {
     }
 }
 
-struct Result {
-    let winner: Choice!
-    let loser: Choice!
-    let draw: Bool = false
+public struct Result {
+    public let winner: Choice!
+    public let loser: Choice!
+    public let draw: Bool = false
 
-    init(choices p1: Choice, p2: Choice) {
+    public init(choices p1: Choice, p2: Choice) {
         draw = p1 == p2
 
         if !draw {
@@ -114,21 +114,21 @@ struct Result {
         }
     }
 
-    var summary: String {
+    public var summary: String {
         return "\(winner.name.capitalizedString) \(winner.verb(loser)) \(loser.name.capitalizedString)."
     }
 }
 
-struct Game {
-    let player1: Choice
-    let player2: Choice
+public struct Game {
+    public let player1: Choice
+    public let player2: Choice
 
-    init(player1: Choice, player2: Choice) {
+    public init(player1: Choice, player2: Choice) {
         self.player1 = player1
         self.player2 = player2
     }
 
-    func play() -> Result {
+    public func play() -> Result {
         return Result(choices: player1, p2: player2)
     }
 }
