@@ -1,6 +1,6 @@
 //
 //  Choice.swift
-//  Rock Paper Scissors Lizard Spock
+//  RoShamBo
 //
 //  Created by Ryan Arana on 3/26/15.
 //  Copyright (c) 2015 PDX-iOS. All rights reserved.

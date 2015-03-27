@@ -1,6 +1,6 @@
 //
-//  Rock_Paper_Scissors_Lizard_SpockTests.swift
-//  Rock Paper Scissors Lizard SpockTests
+//  RoShamBo.swift
+//  RoShamBoTests
 //
 //  Created by Ryan Arana on 3/25/15.
 //  Copyright (c) 2015 PDX-iOS. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class Rock_Paper_Scissors_Lizard_SpockTests: XCTestCase {
+class RoShamBoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
