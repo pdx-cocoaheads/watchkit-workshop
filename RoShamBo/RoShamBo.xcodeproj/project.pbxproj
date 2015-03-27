@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		94290CDD1AC486CC00882299 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Game.swift */; };
+		943560AD1AC5A12700E3230F /* RoShamBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943560AC1AC5A12700E3230F /* RoShamBoTests.swift */; };
 		948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54121AC3725100CCF68F /* AppDelegate.swift */; };
 		948E54151AC3725100CCF68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54141AC3725100CCF68F /* ViewController.swift */; };
 		948E54181AC3725100CCF68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E54161AC3725100CCF68F /* Main.storyboard */; };
 		948E541A1AC3725100CCF68F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948E54191AC3725100CCF68F /* Images.xcassets */; };
 		948E541D1AC3725100CCF68F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948E541B1AC3725100CCF68F /* LaunchScreen.xib */; };
-		948E54291AC3725100CCF68F /* Rock_Paper_Scissors_Lizard_SpockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54281AC3725100CCF68F /* Rock_Paper_Scissors_Lizard_SpockTests.swift */; };
 		948E54381AC378A600CCF68F /* lizard.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54331AC378A600CCF68F /* lizard.png */; };
 		948E54391AC378A600CCF68F /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54341AC378A600CCF68F /* paper.png */; };
 		948E543A1AC378A600CCF68F /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54351AC378A600CCF68F /* rock.png */; };
@@ -32,22 +32,22 @@
 			containerPortal = 948E54051AC3725100CCF68F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 948E540C1AC3725100CCF68F;
-			remoteInfo = "Rock Paper Scissors Lizard Spock";
+			remoteInfo = "RoShamBo";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		94290CDC1AC486CC00882299 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		948E540D1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors Lizard Spock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948E54111AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943560AC1AC5A12700E3230F /* RoShamBoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoShamBoTests.swift; sourceTree = "<group>"; };
+		948E540D1AC3725100CCF68F /* RoShamBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoShamBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		948E54111AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RoShamBo/Info.plist; sourceTree = SOURCE_ROOT; };
 		948E54121AC3725100CCF68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948E54141AC3725100CCF68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		948E54171AC3725100CCF68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		948E54191AC3725100CCF68F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		948E541C1AC3725100CCF68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		948E54221AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper Scissors Lizard SpockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948E54271AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		948E54281AC3725100CCF68F /* Rock_Paper_Scissors_Lizard_SpockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_Scissors_Lizard_SpockTests.swift; sourceTree = "<group>"; };
+		948E54221AC3725100CCF68F /* RoShamBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoShamBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948E54271AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RoShamBoTests/Info.plist; sourceTree = "<group>"; };
 		948E54331AC378A600CCF68F /* lizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lizard.png; sourceTree = "<group>"; };
 		948E54341AC378A600CCF68F /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
 		948E54351AC378A600CCF68F /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 		948E54041AC3725100CCF68F = {
 			isa = PBXGroup;
 			children = (
-				948E540F1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock */,
-				948E54251AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests */,
+				948E540F1AC3725100CCF68F /* RoShamBo */,
+				948E54251AC3725100CCF68F /* RoShamBoTests */,
 				948E540E1AC3725100CCF68F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,13 +90,13 @@
 		948E540E1AC3725100CCF68F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				948E540D1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock.app */,
-				948E54221AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests.xctest */,
+				948E540D1AC3725100CCF68F /* RoShamBo.app */,
+				948E54221AC3725100CCF68F /* RoShamBoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		948E540F1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock */ = {
+		948E540F1AC3725100CCF68F /* RoShamBo */ = {
 			isa = PBXGroup;
 			children = (
 				948E54321AC378A600CCF68F /* images */,
@@ -108,8 +108,8 @@
 				948E541B1AC3725100CCF68F /* LaunchScreen.xib */,
 				948E54101AC3725100CCF68F /* Supporting Files */,
 			);
-			path = "Rock Paper Scissors Lizard Spock";
-			sourceTree = "<group>";
+			path = RoShamBo;
+			sourceTree = SOURCE_ROOT;
 		};
 		948E54101AC3725100CCF68F /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -119,13 +119,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		948E54251AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests */ = {
+		948E54251AC3725100CCF68F /* RoShamBoTests */ = {
 			isa = PBXGroup;
 			children = (
-				948E54281AC3725100CCF68F /* Rock_Paper_Scissors_Lizard_SpockTests.swift */,
+				943560AC1AC5A12700E3230F /* RoShamBoTests.swift */,
 				948E54261AC3725100CCF68F /* Supporting Files */,
 			);
-			path = "Rock Paper Scissors Lizard SpockTests";
+			path = RoShamBoTests;
 			sourceTree = "<group>";
 		};
 		948E54261AC3725100CCF68F /* Supporting Files */ = {
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		948E540C1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock */ = {
+		948E540C1AC3725100CCF68F /* RoShamBo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "Rock Paper Scissors Lizard Spock" */;
+			buildConfigurationList = 948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBo" */;
 			buildPhases = (
 				948E54091AC3725100CCF68F /* Sources */,
 				948E540A1AC3725100CCF68F /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = "Rock Paper Scissors Lizard Spock";
-			productName = "Rock Paper Scissors Lizard Spock";
-			productReference = 948E540D1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock.app */;
+			name = RoShamBo;
+			productName = "RoShamBo";
+			productReference = 948E540D1AC3725100CCF68F /* RoShamBo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		948E54211AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests */ = {
+		948E54211AC3725100CCF68F /* RoShamBoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "Rock Paper Scissors Lizard SpockTests" */;
+			buildConfigurationList = 948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBoTests" */;
 			buildPhases = (
 				948E541E1AC3725100CCF68F /* Sources */,
 				948E541F1AC3725100CCF68F /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				948E54241AC3725100CCF68F /* PBXTargetDependency */,
 			);
-			name = "Rock Paper Scissors Lizard SpockTests";
-			productName = "Rock Paper Scissors Lizard SpockTests";
-			productReference = 948E54221AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests.xctest */;
+			name = RoShamBoTests;
+			productName = "RoShamBoTests";
+			productReference = 948E54221AC3725100CCF68F /* RoShamBoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 948E54081AC3725100CCF68F /* Build configuration list for PBXProject "Rock Paper Scissors Lizard Spock" */;
+			buildConfigurationList = 948E54081AC3725100CCF68F /* Build configuration list for PBXProject "RoShamBo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,8 +222,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				948E540C1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock */,
-				948E54211AC3725100CCF68F /* Rock Paper Scissors Lizard SpockTests */,
+				948E540C1AC3725100CCF68F /* RoShamBo */,
+				948E54211AC3725100CCF68F /* RoShamBoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948E54291AC3725100CCF68F /* Rock_Paper_Scissors_Lizard_SpockTests.swift in Sources */,
+				943560AD1AC5A12700E3230F /* RoShamBoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +282,7 @@
 /* Begin PBXTargetDependency section */
 		948E54241AC3725100CCF68F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 948E540C1AC3725100CCF68F /* Rock Paper Scissors Lizard Spock */;
+			target = 948E540C1AC3725100CCF68F /* RoShamBo */;
 			targetProxy = 948E54231AC3725100CCF68F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -390,9 +390,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Rock Paper Scissors Lizard Spock/Info.plist";
+				INFOPLIST_FILE = "RoShamBo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RoShamBo;
 			};
 			name = Debug;
 		};
@@ -400,9 +400,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Rock Paper Scissors Lizard Spock/Info.plist";
+				INFOPLIST_FILE = "RoShamBo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RoShamBo;
 			};
 			name = Release;
 		};
@@ -418,10 +418,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Rock Paper Scissors Lizard SpockTests/Info.plist";
+				INFOPLIST_FILE = "RoShamBoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rock Paper Scissors Lizard Spock.app/Rock Paper Scissors Lizard Spock";
+				PRODUCT_NAME = RoShamBoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
 			};
 			name = Debug;
 		};
@@ -433,17 +433,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Rock Paper Scissors Lizard SpockTests/Info.plist";
+				INFOPLIST_FILE = "RoShamBoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rock Paper Scissors Lizard Spock.app/Rock Paper Scissors Lizard Spock";
+				PRODUCT_NAME = RoShamBoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		948E54081AC3725100CCF68F /* Build configuration list for PBXProject "Rock Paper Scissors Lizard Spock" */ = {
+		948E54081AC3725100CCF68F /* Build configuration list for PBXProject "RoShamBo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				948E542A1AC3725100CCF68F /* Debug */,
@@ -452,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "Rock Paper Scissors Lizard Spock" */ = {
+		948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				948E542D1AC3725100CCF68F /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "Rock Paper Scissors Lizard SpockTests" */ = {
+		948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				948E54301AC3725100CCF68F /* Debug */,

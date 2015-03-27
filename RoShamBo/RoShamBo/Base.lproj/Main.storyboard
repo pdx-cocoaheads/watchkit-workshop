@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rock_Paper_Scissors_Lizard_Spock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoShamBo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,14 +29,19 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="23l-qf-i7v">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="100" id="zDT-KQ-eyO">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="rock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="119" y="8" width="80" height="80"/>
+                                        </variation>
                                         <connections>
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHl-6c-WA4"/>
                                         </connections>
@@ -49,14 +54,19 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="N2y-Nn-pur">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="100" id="NcR-1v-Fr1">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="spock.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="119" y="98" width="80" height="80"/>
+                                        </variation>
                                         <connections>
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeX-IF-l3K"/>
                                         </connections>
@@ -69,9 +79,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="fgZ-kV-l00">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="100" id="kNV-h1-lWS">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="lizard.png">
@@ -89,9 +101,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="c8B-iv-4Ui">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="100" id="cAg-7B-XmP">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="paper.png">
@@ -109,14 +123,19 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="mJh-rz-4SR">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="100" id="qi8-fC-nvG">
                                                 <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="scissors.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="119" y="188" width="80" height="80"/>
+                                        </variation>
                                         <connections>
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4u-2F-LL7"/>
                                         </connections>
@@ -150,6 +169,12 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your choice." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
                                         <rect key="frame" x="296" y="8" width="264" height="134"/>
@@ -184,7 +209,7 @@
                                     <constraint firstItem="hhh-Zd-ibn" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="aKS-QM-uDW"/>
                                     <constraint firstItem="vUa-CQ-HpS" firstAttribute="leading" secondItem="Qoo-EC-NcZ" secondAttribute="trailing" constant="8" id="aM3-YB-q1a"/>
                                     <constraint firstAttribute="bottom" secondItem="hhh-Zd-ibn" secondAttribute="bottom" constant="8" id="emF-qB-JEt"/>
-                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" constant="8" id="wKe-c2-vQW"/>
+                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" constant="-8" id="wKe-c2-vQW"/>
                                     <constraint firstAttribute="trailing" secondItem="hhh-Zd-ibn" secondAttribute="trailing" constant="8" id="yC7-Fo-qTd"/>
                                     <constraint firstAttribute="bottom" secondItem="Qoo-EC-NcZ" secondAttribute="bottom" constant="8" id="yU2-Tu-rSD"/>
                                 </constraints>
@@ -202,6 +227,8 @@
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sJI-Qb-rBZ"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="355" height="400"/>
                     <connections>
                         <outlet property="computerChoiceImage" destination="vUa-CQ-HpS" id="kit-C6-qJr"/>
                         <outlet property="resultsLabel" destination="hhh-Zd-ibn" id="YLS-OP-k7P"/>
@@ -209,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="430"/>
+            <point key="canvasLocation" x="147.75" y="433.5"/>
         </scene>
     </scenes>
     <resources>
