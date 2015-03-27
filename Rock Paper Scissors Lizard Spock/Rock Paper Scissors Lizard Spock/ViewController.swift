@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         computerChoiceImage.image = UIImage(named: "\(compChoice.name)-highlighted")
 
         var txt: String
-        let r = playerChoice!.versus(compChoice)
+        let r = Game(player1: playerChoice!, player2: compChoice).play()
 
         if r.draw {
             txt = "It's a draw. Try again!"
