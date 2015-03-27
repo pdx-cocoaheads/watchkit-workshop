@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94290CDD1AC486CC00882299 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Game.swift */; };
+		943560AD1AC5A12700E3230F /* RoShamBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943560AC1AC5A12700E3230F /* RoShamBoTests.swift */; };
+		948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54121AC3725100CCF68F /* AppDelegate.swift */; };
+		948E54151AC3725100CCF68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54141AC3725100CCF68F /* ViewController.swift */; };
+		948E54181AC3725100CCF68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E54161AC3725100CCF68F /* Main.storyboard */; };
+		948E541A1AC3725100CCF68F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948E54191AC3725100CCF68F /* Images.xcassets */; };
+		948E541D1AC3725100CCF68F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948E541B1AC3725100CCF68F /* LaunchScreen.xib */; };
+		948E54381AC378A600CCF68F /* lizard.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54331AC378A600CCF68F /* lizard.png */; };
+		948E54391AC378A600CCF68F /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54341AC378A600CCF68F /* paper.png */; };
+		948E543A1AC378A600CCF68F /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54351AC378A600CCF68F /* rock.png */; };
+		948E543B1AC378A600CCF68F /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54361AC378A600CCF68F /* scissors.png */; };
+		948E543C1AC378A600CCF68F /* spock.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54371AC378A600CCF68F /* spock.png */; };
+		948E54421AC3CF2F00CCF68F /* lizard-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E543D1AC3CF2F00CCF68F /* lizard-highlighted.png */; };
+		948E54431AC3CF2F00CCF68F /* paper-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E543E1AC3CF2F00CCF68F /* paper-highlighted.png */; };
+		948E54441AC3CF2F00CCF68F /* rock-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E543F1AC3CF2F00CCF68F /* rock-highlighted.png */; };
+		948E54451AC3CF2F00CCF68F /* scissors-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54401AC3CF2F00CCF68F /* scissors-highlighted.png */; };
+		948E54461AC3CF2F00CCF68F /* spock-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 948E54411AC3CF2F00CCF68F /* spock-highlighted.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		948E54231AC3725100CCF68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948E54051AC3725100CCF68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948E540C1AC3725100CCF68F;
+			remoteInfo = RoShamBo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94290CDC1AC486CC00882299 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		943560AC1AC5A12700E3230F /* RoShamBoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoShamBoTests.swift; sourceTree = "<group>"; };
+		948E540D1AC3725100CCF68F /* RoShamBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoShamBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		948E54111AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RoShamBo/Info.plist; sourceTree = SOURCE_ROOT; };
+		948E54121AC3725100CCF68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		948E54141AC3725100CCF68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		948E54171AC3725100CCF68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		948E54191AC3725100CCF68F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		948E541C1AC3725100CCF68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		948E54221AC3725100CCF68F /* RoShamBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoShamBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948E54271AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RoShamBoTests/Info.plist; sourceTree = "<group>"; };
+		948E54331AC378A600CCF68F /* lizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lizard.png; sourceTree = "<group>"; };
+		948E54341AC378A600CCF68F /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		948E54351AC378A600CCF68F /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		948E54361AC378A600CCF68F /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		948E54371AC378A600CCF68F /* spock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spock.png; sourceTree = "<group>"; };
+		948E543D1AC3CF2F00CCF68F /* lizard-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lizard-highlighted.png"; sourceTree = "<group>"; };
+		948E543E1AC3CF2F00CCF68F /* paper-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-highlighted.png"; sourceTree = "<group>"; };
+		948E543F1AC3CF2F00CCF68F /* rock-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock-highlighted.png"; sourceTree = "<group>"; };
+		948E54401AC3CF2F00CCF68F /* scissors-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scissors-highlighted.png"; sourceTree = "<group>"; };
+		948E54411AC3CF2F00CCF68F /* spock-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spock-highlighted.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		948E540A1AC3725100CCF68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948E541F1AC3725100CCF68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		948E54041AC3725100CCF68F = {
+			isa = PBXGroup;
+			children = (
+				948E540F1AC3725100CCF68F /* RoShamBo */,
+				948E54251AC3725100CCF68F /* RoShamBoTests */,
+				948E540E1AC3725100CCF68F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		948E540E1AC3725100CCF68F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				948E540D1AC3725100CCF68F /* RoShamBo.app */,
+				948E54221AC3725100CCF68F /* RoShamBoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		948E540F1AC3725100CCF68F /* RoShamBo */ = {
+			isa = PBXGroup;
+			children = (
+				948E54321AC378A600CCF68F /* images */,
+				948E54121AC3725100CCF68F /* AppDelegate.swift */,
+				948E54141AC3725100CCF68F /* ViewController.swift */,
+				948E54161AC3725100CCF68F /* Main.storyboard */,
+				94290CDC1AC486CC00882299 /* Game.swift */,
+				948E54191AC3725100CCF68F /* Images.xcassets */,
+				948E541B1AC3725100CCF68F /* LaunchScreen.xib */,
+				948E54101AC3725100CCF68F /* Supporting Files */,
+			);
+			path = RoShamBo;
+			sourceTree = SOURCE_ROOT;
+		};
+		948E54101AC3725100CCF68F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				948E54111AC3725100CCF68F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		948E54251AC3725100CCF68F /* RoShamBoTests */ = {
+			isa = PBXGroup;
+			children = (
+				943560AC1AC5A12700E3230F /* RoShamBoTests.swift */,
+				948E54261AC3725100CCF68F /* Supporting Files */,
+			);
+			path = RoShamBoTests;
+			sourceTree = "<group>";
+		};
+		948E54261AC3725100CCF68F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				948E54271AC3725100CCF68F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		948E54321AC378A600CCF68F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				948E543D1AC3CF2F00CCF68F /* lizard-highlighted.png */,
+				948E543E1AC3CF2F00CCF68F /* paper-highlighted.png */,
+				948E543F1AC3CF2F00CCF68F /* rock-highlighted.png */,
+				948E54401AC3CF2F00CCF68F /* scissors-highlighted.png */,
+				948E54411AC3CF2F00CCF68F /* spock-highlighted.png */,
+				948E54331AC378A600CCF68F /* lizard.png */,
+				948E54341AC378A600CCF68F /* paper.png */,
+				948E54351AC378A600CCF68F /* rock.png */,
+				948E54361AC378A600CCF68F /* scissors.png */,
+				948E54371AC378A600CCF68F /* spock.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		948E540C1AC3725100CCF68F /* RoShamBo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBo" */;
+			buildPhases = (
+				948E54091AC3725100CCF68F /* Sources */,
+				948E540A1AC3725100CCF68F /* Frameworks */,
+				948E540B1AC3725100CCF68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoShamBo;
+			productName = RoShamBo;
+			productReference = 948E540D1AC3725100CCF68F /* RoShamBo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		948E54211AC3725100CCF68F /* RoShamBoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBoTests" */;
+			buildPhases = (
+				948E541E1AC3725100CCF68F /* Sources */,
+				948E541F1AC3725100CCF68F /* Frameworks */,
+				948E54201AC3725100CCF68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948E54241AC3725100CCF68F /* PBXTargetDependency */,
+			);
+			name = RoShamBoTests;
+			productName = RoShamBoTests;
+			productReference = 948E54221AC3725100CCF68F /* RoShamBoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		948E54051AC3725100CCF68F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "PDX-iOS";
+				TargetAttributes = {
+					948E540C1AC3725100CCF68F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					948E54211AC3725100CCF68F = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 948E540C1AC3725100CCF68F;
+					};
+				};
+			};
+			buildConfigurationList = 948E54081AC3725100CCF68F /* Build configuration list for PBXProject "RoShamBo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 948E54041AC3725100CCF68F;
+			productRefGroup = 948E540E1AC3725100CCF68F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				948E540C1AC3725100CCF68F /* RoShamBo */,
+				948E54211AC3725100CCF68F /* RoShamBoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		948E540B1AC3725100CCF68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948E54181AC3725100CCF68F /* Main.storyboard in Resources */,
+				948E54391AC378A600CCF68F /* paper.png in Resources */,
+				948E543A1AC378A600CCF68F /* rock.png in Resources */,
+				948E543B1AC378A600CCF68F /* scissors.png in Resources */,
+				948E543C1AC378A600CCF68F /* spock.png in Resources */,
+				948E541D1AC3725100CCF68F /* LaunchScreen.xib in Resources */,
+				948E54461AC3CF2F00CCF68F /* spock-highlighted.png in Resources */,
+				948E54431AC3CF2F00CCF68F /* paper-highlighted.png in Resources */,
+				948E541A1AC3725100CCF68F /* Images.xcassets in Resources */,
+				948E54381AC378A600CCF68F /* lizard.png in Resources */,
+				948E54441AC3CF2F00CCF68F /* rock-highlighted.png in Resources */,
+				948E54451AC3CF2F00CCF68F /* scissors-highlighted.png in Resources */,
+				948E54421AC3CF2F00CCF68F /* lizard-highlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948E54201AC3725100CCF68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		948E54091AC3725100CCF68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94290CDD1AC486CC00882299 /* Game.swift in Sources */,
+				948E54151AC3725100CCF68F /* ViewController.swift in Sources */,
+				948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948E541E1AC3725100CCF68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943560AD1AC5A12700E3230F /* RoShamBoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		948E54241AC3725100CCF68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948E540C1AC3725100CCF68F /* RoShamBo */;
+			targetProxy = 948E54231AC3725100CCF68F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		948E54161AC3725100CCF68F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948E54171AC3725100CCF68F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		948E541B1AC3725100CCF68F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948E541C1AC3725100CCF68F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		948E542A1AC3725100CCF68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948E542B1AC3725100CCF68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		948E542D1AC3725100CCF68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoShamBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = RoShamBo;
+			};
+			name = Debug;
+		};
+		948E542E1AC3725100CCF68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoShamBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = RoShamBo;
+			};
+			name = Release;
+		};
+		948E54301AC3725100CCF68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RoShamBoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = RoShamBoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
+			};
+			name = Debug;
+		};
+		948E54311AC3725100CCF68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RoShamBoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = RoShamBoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoShamBo.app/RoShamBo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		948E54081AC3725100CCF68F /* Build configuration list for PBXProject "RoShamBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948E542A1AC3725100CCF68F /* Debug */,
+				948E542B1AC3725100CCF68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948E542C1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948E542D1AC3725100CCF68F /* Debug */,
+				948E542E1AC3725100CCF68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948E542F1AC3725100CCF68F /* Build configuration list for PBXNativeTarget "RoShamBoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948E54301AC3725100CCF68F /* Debug */,
+				948E54311AC3725100CCF68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 948E54051AC3725100CCF68F /* Project object */;
+}
