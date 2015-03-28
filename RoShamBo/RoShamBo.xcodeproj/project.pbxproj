@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		94290CDD1AC486CC00882299 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Game.swift */; };
 		943560AD1AC5A12700E3230F /* RoShamBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943560AC1AC5A12700E3230F /* RoShamBoTests.swift */; };
+		943560AF1AC7310100E3230F /* rpsls.png in Resources */ = {isa = PBXBuildFile; fileRef = 943560AE1AC7310100E3230F /* rpsls.png */; };
 		948E54131AC3725100CCF68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54121AC3725100CCF68F /* AppDelegate.swift */; };
 		948E54151AC3725100CCF68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E54141AC3725100CCF68F /* ViewController.swift */; };
 		948E54181AC3725100CCF68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948E54161AC3725100CCF68F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		94290CDC1AC486CC00882299 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		943560AC1AC5A12700E3230F /* RoShamBoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoShamBoTests.swift; sourceTree = "<group>"; };
+		943560AE1AC7310100E3230F /* rpsls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rpsls.png; sourceTree = "<group>"; };
 		948E540D1AC3725100CCF68F /* RoShamBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoShamBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E54111AC3725100CCF68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RoShamBo/Info.plist; sourceTree = SOURCE_ROOT; };
 		948E54121AC3725100CCF68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		948E54321AC378A600CCF68F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				943560AE1AC7310100E3230F /* rpsls.png */,
 				948E543D1AC3CF2F00CCF68F /* lizard-highlighted.png */,
 				948E543E1AC3CF2F00CCF68F /* paper-highlighted.png */,
 				948E543F1AC3CF2F00CCF68F /* rock-highlighted.png */,
@@ -243,6 +246,7 @@
 				948E54431AC3CF2F00CCF68F /* paper-highlighted.png in Resources */,
 				948E541A1AC3725100CCF68F /* Images.xcassets in Resources */,
 				948E54381AC378A600CCF68F /* lizard.png in Resources */,
+				943560AF1AC7310100E3230F /* rpsls.png in Resources */,
 				948E54441AC3CF2F00CCF68F /* rock-highlighted.png in Resources */,
 				948E54451AC3CF2F00CCF68F /* scissors-highlighted.png in Resources */,
 				948E54421AC3CF2F00CCF68F /* lizard-highlighted.png in Resources */,
@@ -394,6 +398,7 @@
 				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -405,6 +410,7 @@
 				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
