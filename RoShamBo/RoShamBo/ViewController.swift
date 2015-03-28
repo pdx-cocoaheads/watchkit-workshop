@@ -24,10 +24,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var computerChoiceImage: UIImageView!
     @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var computerChoiceLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        computerChoiceLabel.hidden = true
 
         for c in Choice.all() {
             let btn: UIButton = getButtonForChoice(c)
@@ -57,6 +60,7 @@ class ViewController: UIViewController {
     func playGame() {
         let compChoice = Choice.random()
         computerChoiceImage.image = UIImage(named: "\(compChoice.name)-highlighted")
+        computerChoiceLabel.hidden = false
 
         var txt: String
         let r = Game(player1: playerChoice!, player2: compChoice).play()

@@ -15,25 +15,66 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgK-bc-zlH" userLabel="Computer View">
+                                <rect key="frame" x="16" y="456" width="343" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer's Choice:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-EC-NcZ">
+                                        <rect key="frame" x="0.0" y="8" width="343" height="43"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-CQ-HpS">
+                                        <rect key="frame" x="122" y="59" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lgh-K5-CcR">
+                                                <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="100" id="luq-OR-4y9">
+                                                <variation key="heightClass=compact" constant="80"/>
+                                                <variation key="widthClass=compact" constant="80"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your choice." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
+                                        <rect key="frame" x="0.0" y="167" width="343" height="43"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hhh-Zd-ibn" secondAttribute="trailing" id="2j5-es-5wv"/>
+                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="top" secondItem="vUa-CQ-HpS" secondAttribute="bottom" constant="8" id="4cJ-VL-dhk"/>
+                                    <constraint firstAttribute="centerX" secondItem="vUa-CQ-HpS" secondAttribute="centerX" id="9eR-PN-Jpo"/>
+                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" id="OU1-2y-vnP"/>
+                                    <constraint firstAttribute="centerY" secondItem="vUa-CQ-HpS" secondAttribute="centerY" id="VSJ-lu-fC3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qoo-EC-NcZ" secondAttribute="trailing" id="cGn-XG-pGe"/>
+                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" id="ctK-Py-HHa"/>
+                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="hrR-Y1-VYj"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhh-Zd-ibn" secondAttribute="bottom" constant="8" id="i17-wh-BqM"/>
+                                    <constraint firstItem="vUa-CQ-HpS" firstAttribute="top" secondItem="Qoo-EC-NcZ" secondAttribute="bottom" constant="8" id="x9p-Ir-vcp"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-Q4-sVI" userLabel="Buttons View">
-                                <rect key="frame" x="16" y="28" width="568" height="414"/>
+                                <rect key="frame" x="16" y="28" width="343" height="422"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXs-Wc-bJy" userLabel="Rock">
-                                        <rect key="frame" x="234" y="8" width="100" height="100"/>
+                                        <rect key="frame" x="127" y="8" width="90" height="90"/>
                                         <accessibility key="accessibilityConfiguration" label="rock">
                                             <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="23l-qf-i7v">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="width" constant="90" id="23l-qf-i7v">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="100" id="zDT-KQ-eyO">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="height" constant="90" id="zDT-KQ-eyO">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="rock.png">
@@ -46,19 +87,17 @@
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHl-6c-WA4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loY-BY-vN7" userLabel="Spock">
-                                        <rect key="frame" x="234" y="157" width="100" height="100"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loY-BY-vN7" userLabel="Spock">
+                                        <rect key="frame" x="127" y="167" width="90" height="90"/>
                                         <accessibility key="accessibilityConfiguration" label="spock">
                                             <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="N2y-Nn-pur">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="width" constant="90" id="N2y-Nn-pur">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="100" id="NcR-1v-Fr1">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="height" constant="90" id="NcR-1v-Fr1">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="spock.png">
@@ -71,19 +110,17 @@
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeX-IF-l3K"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-jo-0AJ" userLabel="Lizard">
-                                        <rect key="frame" x="8" y="157" width="100" height="100"/>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-jo-0AJ" userLabel="Lizard">
+                                        <rect key="frame" x="8" y="167" width="90" height="90"/>
                                         <accessibility key="accessibilityConfiguration" label="lizard">
                                             <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="fgZ-kV-l00">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="width" constant="90" id="fgZ-kV-l00">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="100" id="kNV-h1-lWS">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="height" constant="90" id="kNV-h1-lWS">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="lizard.png">
@@ -93,19 +130,17 @@
                                             <action selector="playerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uB0-yd-OhN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-H1-tdJ" userLabel="Paper">
-                                        <rect key="frame" x="460" y="157" width="100" height="100"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-H1-tdJ" userLabel="Paper">
+                                        <rect key="frame" x="245" y="167" width="90" height="90"/>
                                         <accessibility key="accessibilityConfiguration" label="paper">
                                             <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="c8B-iv-4Ui">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="width" constant="90" id="c8B-iv-4Ui">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="100" id="cAg-7B-XmP">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="height" constant="90" id="cAg-7B-XmP">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="paper.png">
@@ -116,18 +151,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH5-9n-uHT" userLabel="Scissors">
-                                        <rect key="frame" x="234" y="306" width="100" height="100"/>
+                                        <rect key="frame" x="127" y="324" width="90" height="90"/>
                                         <accessibility key="accessibilityConfiguration" label="scissors">
                                             <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="mJh-rz-4SR">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="height" constant="90" id="mJh-rz-4SR">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
-                                            <constraint firstAttribute="width" constant="100" id="qi8-fC-nvG">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
+                                            <constraint firstAttribute="width" constant="90" id="qi8-fC-nvG">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="scissors.png">
@@ -153,65 +186,6 @@
                                     <constraint firstItem="wXs-Wc-bJy" firstAttribute="top" secondItem="e8s-Q4-sVI" secondAttribute="top" constant="8" id="kKT-m0-NVU"/>
                                     <constraint firstAttribute="centerX" secondItem="loY-BY-vN7" secondAttribute="centerX" id="m0M-21-gfp"/>
                                     <constraint firstAttribute="trailing" secondItem="tdD-H1-tdJ" secondAttribute="trailing" constant="8" id="mLX-dq-Zoj"/>
-                                    <constraint firstAttribute="centerX" secondItem="wXs-Wc-bJy" secondAttribute="centerX" constant="287" id="oFT-sS-TSA"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="oFT-sS-TSA"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgK-bc-zlH" userLabel="Computer View">
-                                <rect key="frame" x="16" y="442" width="568" height="150"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer's Choice:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-EC-NcZ">
-                                        <rect key="frame" x="8" y="8" width="172" height="134"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your choice." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Zd-ibn">
-                                        <rect key="frame" x="296" y="8" width="264" height="134"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-CQ-HpS">
-                                        <rect key="frame" x="188" y="25" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="lgh-K5-CcR">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
-                                            </constraint>
-                                            <constraint firstAttribute="height" constant="100" id="luq-OR-4y9">
-                                                <variation key="heightClass=compact" constant="80"/>
-                                                <variation key="widthClass=compact" constant="80"/>
-                                            </constraint>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="leading" secondItem="vUa-CQ-HpS" secondAttribute="trailing" constant="8" id="3sG-vj-c4d"/>
-                                    <constraint firstAttribute="centerY" secondItem="Qoo-EC-NcZ" secondAttribute="centerY" id="8vp-E1-HLU"/>
-                                    <constraint firstAttribute="centerX" secondItem="vUa-CQ-HpS" secondAttribute="centerX" constant="46" id="9eR-PN-Jpo">
-                                        <variation key="widthClass=compact" constant="32"/>
-                                    </constraint>
-                                    <constraint firstAttribute="centerY" secondItem="hhh-Zd-ibn" secondAttribute="centerY" id="HOH-zd-yMe"/>
-                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="KuV-MH-6sR"/>
-                                    <constraint firstAttribute="centerY" secondItem="vUa-CQ-HpS" secondAttribute="centerY" id="VSJ-lu-fC3"/>
-                                    <constraint firstItem="hhh-Zd-ibn" firstAttribute="top" secondItem="vgK-bc-zlH" secondAttribute="top" constant="8" id="aKS-QM-uDW"/>
-                                    <constraint firstItem="vUa-CQ-HpS" firstAttribute="leading" secondItem="Qoo-EC-NcZ" secondAttribute="trailing" constant="8" id="aM3-YB-q1a"/>
-                                    <constraint firstAttribute="bottom" secondItem="hhh-Zd-ibn" secondAttribute="bottom" constant="8" id="emF-qB-JEt"/>
-                                    <constraint firstItem="Qoo-EC-NcZ" firstAttribute="leading" secondItem="vgK-bc-zlH" secondAttribute="leading" constant="-8" id="wKe-c2-vQW"/>
-                                    <constraint firstAttribute="trailing" secondItem="hhh-Zd-ibn" secondAttribute="trailing" constant="8" id="yC7-Fo-qTd"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qoo-EC-NcZ" secondAttribute="bottom" constant="8" id="yU2-Tu-rSD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -221,22 +195,23 @@
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="width" secondItem="vgK-bc-zlH" secondAttribute="width" id="CYP-65-ahY"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="FCL-VT-RHD"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dMe-Ze-Z8E"/>
-                            <constraint firstAttribute="height" secondItem="e8s-Q4-sVI" secondAttribute="height" multiplier="1.45" id="h0S-ML-oO5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="vgK-bc-zlH" secondAttribute="bottom" constant="8" id="kPc-JR-03g"/>
+                            <constraint firstAttribute="height" secondItem="e8s-Q4-sVI" secondAttribute="height" multiplier="1.58" id="h0S-ML-oO5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vgK-bc-zlH" secondAttribute="bottom" id="kPc-JR-03g"/>
                             <constraint firstAttribute="centerX" secondItem="vgK-bc-zlH" secondAttribute="centerX" id="pWA-PO-D38"/>
                             <constraint firstItem="e8s-Q4-sVI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sJI-Qb-rBZ"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="355" height="400"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="computerChoiceImage" destination="vUa-CQ-HpS" id="kit-C6-qJr"/>
+                        <outlet property="computerChoiceLabel" destination="Qoo-EC-NcZ" id="XjL-ww-fM1"/>
                         <outlet property="resultsLabel" destination="hhh-Zd-ibn" id="YLS-OP-k7P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147.75" y="433.5"/>
+            <point key="canvasLocation" x="113.5" y="499.5"/>
         </scene>
     </scenes>
     <resources>
