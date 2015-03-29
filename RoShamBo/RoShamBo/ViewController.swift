@@ -8,6 +8,8 @@
 
 import UIKit
 
+import RoShamBoKit
+
 class ViewController: UIViewController {
 
     var playerChoice: Choice? {
