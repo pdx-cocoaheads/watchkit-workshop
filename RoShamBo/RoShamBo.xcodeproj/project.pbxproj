@@ -29,6 +29,13 @@
 		94AA07801AC8AE3800FB0978 /* RoShamBoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA07691AC8AE3800FB0978 /* RoShamBoKit.framework */; };
 		94AA07811AC8AE3800FB0978 /* RoShamBoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA07691AC8AE3800FB0978 /* RoShamBoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94AA07891AC8AE5800FB0978 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Game.swift */; };
+		94AA079A1AC8B36500FB0978 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA07991AC8B36500FB0978 /* InterfaceController.swift */; };
+		94AA079C1AC8B36500FB0978 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA079B1AC8B36500FB0978 /* NotificationController.swift */; };
+		94AA079E1AC8B36500FB0978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AA079D1AC8B36500FB0978 /* Images.xcassets */; };
+		94AA07A21AC8B36500FB0978 /* RoShamBo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */; };
+		94AA07AA1AC8B36500FB0978 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07A81AC8B36500FB0978 /* Interface.storyboard */; };
+		94AA07AC1AC8B36500FB0978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07AB1AC8B36500FB0978 /* Images.xcassets */; };
+		94AA07AF1AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94AA07941AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,20 @@
 			remoteGlobalIDString = 948E540C1AC3725100CCF68F;
 			remoteInfo = RoShamBo;
 		};
+		94AA07A31AC8B36500FB0978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948E54051AC3725100CCF68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94AA07A01AC8B36500FB0978;
+			remoteInfo = "RoShamBo WatchKit App";
+		};
+		94AA07AD1AC8B36500FB0978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948E54051AC3725100CCF68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94AA07931AC8B36500FB0978;
+			remoteInfo = "RoShamBo WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +86,17 @@
 				94AA07811AC8AE3800FB0978 /* RoShamBoKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AA07B61AC8B36500FB0978 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94AA07AF1AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -95,6 +127,16 @@
 		94AA07731AC8AE3800FB0978 /* RoShamBoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoShamBoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AA077B1AC8AE3800FB0978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94AA077C1AC8AE3800FB0978 /* RoShamBoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoShamBoKitTests.swift; sourceTree = "<group>"; };
+		94AA07941AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RoShamBo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AA07971AC8B36500FB0978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AA07981AC8B36500FB0978 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		94AA07991AC8B36500FB0978 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		94AA079B1AC8B36500FB0978 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94AA079D1AC8B36500FB0978 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RoShamBo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AA07A71AC8B36500FB0978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AA07A91AC8B36500FB0978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		94AA07AB1AC8B36500FB0978 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +163,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94AA07911AC8B36500FB0978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -140,6 +189,8 @@
 				948E540D1AC3725100CCF68F /* RoShamBo.app */,
 				94AA07691AC8AE3800FB0978 /* RoShamBoKit.framework */,
 				94AA07731AC8AE3800FB0978 /* RoShamBoKitTests.xctest */,
+				94AA07941AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex */,
+				94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,6 +289,8 @@
 		94AA078E1AC8B23300FB0978 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
+				94AA07951AC8B36500FB0978 /* RoShamBo WatchKit Extension */,
+				94AA07A51AC8B36500FB0978 /* RoShamBo WatchKit App */,
 			);
 			name = Watch;
 			sourceTree = "<group>";
@@ -249,6 +302,44 @@
 				94AA07791AC8AE3800FB0978 /* RoShamBoKitTests */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		94AA07951AC8B36500FB0978 /* RoShamBo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94AA07991AC8B36500FB0978 /* InterfaceController.swift */,
+				94AA079B1AC8B36500FB0978 /* NotificationController.swift */,
+				94AA079D1AC8B36500FB0978 /* Images.xcassets */,
+				94AA07961AC8B36500FB0978 /* Supporting Files */,
+			);
+			path = "RoShamBo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		94AA07961AC8B36500FB0978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AA07971AC8B36500FB0978 /* Info.plist */,
+				94AA07981AC8B36500FB0978 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94AA07A51AC8B36500FB0978 /* RoShamBo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				94AA07A81AC8B36500FB0978 /* Interface.storyboard */,
+				94AA07AB1AC8B36500FB0978 /* Images.xcassets */,
+				94AA07A61AC8B36500FB0978 /* Supporting Files */,
+			);
+			path = "RoShamBo WatchKit App";
+			sourceTree = "<group>";
+		};
+		94AA07A61AC8B36500FB0978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AA07A71AC8B36500FB0978 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,11 +364,13 @@
 				948E540A1AC3725100CCF68F /* Frameworks */,
 				948E540B1AC3725100CCF68F /* Resources */,
 				94AA07851AC8AE3800FB0978 /* Embed Frameworks */,
+				94AA07B61AC8B36500FB0978 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				94AA077F1AC8AE3800FB0978 /* PBXTargetDependency */,
+				94AA07AE1AC8B36500FB0978 /* PBXTargetDependency */,
 			);
 			name = RoShamBo;
 			productName = RoShamBo;
@@ -321,6 +414,39 @@
 			productReference = 94AA07731AC8AE3800FB0978 /* RoShamBoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		94AA07931AC8B36500FB0978 /* RoShamBo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AA07B51AC8B36500FB0978 /* Build configuration list for PBXNativeTarget "RoShamBo WatchKit Extension" */;
+			buildPhases = (
+				94AA07901AC8B36500FB0978 /* Sources */,
+				94AA07911AC8B36500FB0978 /* Frameworks */,
+				94AA07921AC8B36500FB0978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94AA07A41AC8B36500FB0978 /* PBXTargetDependency */,
+			);
+			name = "RoShamBo WatchKit Extension";
+			productName = "RoShamBo WatchKit Extension";
+			productReference = 94AA07941AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		94AA07A01AC8B36500FB0978 /* RoShamBo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AA07B41AC8B36500FB0978 /* Build configuration list for PBXNativeTarget "RoShamBo WatchKit App" */;
+			buildPhases = (
+				94AA079F1AC8B36500FB0978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RoShamBo WatchKit App";
+			productName = "RoShamBo WatchKit App";
+			productReference = 94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -340,6 +466,12 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 948E540C1AC3725100CCF68F;
 					};
+					94AA07931AC8B36500FB0978 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					94AA07A01AC8B36500FB0978 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 				};
 			};
 			buildConfigurationList = 948E54081AC3725100CCF68F /* Build configuration list for PBXProject "RoShamBo" */;
@@ -358,6 +490,8 @@
 				948E540C1AC3725100CCF68F /* RoShamBo */,
 				94AA07681AC8AE3800FB0978 /* RoShamBoKit */,
 				94AA07721AC8AE3800FB0978 /* RoShamBoKitTests */,
+				94AA07931AC8B36500FB0978 /* RoShamBo WatchKit Extension */,
+				94AA07A01AC8B36500FB0978 /* RoShamBo WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -398,6 +532,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94AA07921AC8B36500FB0978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AA079E1AC8B36500FB0978 /* Images.xcassets in Resources */,
+				94AA07A21AC8B36500FB0978 /* RoShamBo WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AA079F1AC8B36500FB0978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AA07AA1AC8B36500FB0978 /* Interface.storyboard in Resources */,
+				94AA07AC1AC8B36500FB0978 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -426,6 +578,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94AA07901AC8B36500FB0978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AA079C1AC8B36500FB0978 /* NotificationController.swift in Sources */,
+				94AA079A1AC8B36500FB0978 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -444,6 +605,16 @@
 			target = 948E540C1AC3725100CCF68F /* RoShamBo */;
 			targetProxy = 94AA078A1AC8B0D500FB0978 /* PBXContainerItemProxy */;
 		};
+		94AA07A41AC8B36500FB0978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94AA07A01AC8B36500FB0978 /* RoShamBo WatchKit App */;
+			targetProxy = 94AA07A31AC8B36500FB0978 /* PBXContainerItemProxy */;
+		};
+		94AA07AE1AC8B36500FB0978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94AA07931AC8B36500FB0978 /* RoShamBo WatchKit Extension */;
+			targetProxy = 94AA07AD1AC8B36500FB0978 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -461,6 +632,14 @@
 				948E541C1AC3725100CCF68F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		94AA07A81AC8B36500FB0978 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AA07A91AC8B36500FB0978 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -550,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
@@ -562,6 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RoShamBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = RoShamBo;
@@ -641,6 +822,60 @@
 			};
 			name = Release;
 		};
+		94AA07B01AC8B36500FB0978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RoShamBo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		94AA07B11AC8B36500FB0978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RoShamBo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		94AA07B21AC8B36500FB0978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RoShamBo_WatchKit_Extension;
+				INFOPLIST_FILE = "RoShamBo WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		94AA07B31AC8B36500FB0978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = RoShamBo_WatchKit_Extension;
+				INFOPLIST_FILE = "RoShamBo WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -669,12 +904,30 @@
 				94AA07841AC8AE3800FB0978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94AA07861AC8AE3800FB0978 /* Build configuration list for PBXNativeTarget "RoShamBoKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94AA07871AC8AE3800FB0978 /* Debug */,
 				94AA07881AC8AE3800FB0978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AA07B41AC8B36500FB0978 /* Build configuration list for PBXNativeTarget "RoShamBo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AA07B21AC8B36500FB0978 /* Debug */,
+				94AA07B31AC8B36500FB0978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94AA07B51AC8B36500FB0978 /* Build configuration list for PBXNativeTarget "RoShamBo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AA07B01AC8B36500FB0978 /* Debug */,
+				94AA07B11AC8B36500FB0978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
