@@ -6,4 +6,4 @@ The algorithm used for determining the winner makes adding more weapons fairly s
 
 # ART
 
-I'm honestly not even sure where the original artwork that I chopped up to make this thing came from. I appologize to its author(s) and strongly advise you not to submit this code as an app to the App Store without, at least an art swap.
+I'm honestly not even sure where the original artwork that I chopped up to make this thing came from. I apologize to its author(s) and strongly advise you not to submit this code as an app to the App Store without, at least an art swap.
