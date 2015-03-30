@@ -4,6 +4,10 @@ A very simple app for playing Rock, Paper, Scissors, Lizard, Spock against your 
 
 The algorithm used for determining the winner makes adding more weapons fairly simple, you just have to add 2 at a time. The first one you add would need to defeat all of the odd numbered options before it, and lose to all of the evens. The second would be visa versa.
 
-# ART
+# Requirements
+
+Built with Swift 1.1 and Xcode 6.2 (6C131e).
+
+# Art
 
 I'm honestly not even sure where the original artwork that I chopped up to make this thing came from. I apologize to its author(s) and strongly advise you not to submit this code as an app to the App Store without, at least an art swap.
