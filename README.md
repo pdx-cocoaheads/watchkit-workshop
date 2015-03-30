@@ -6,7 +6,7 @@ The algorithm used for determining the winner makes adding more weapons fairly s
 
 # Requirements
 
-Built with Swift 1.1 and Xcode 6.2 (6C131e).
+Built with the release version of Xcode 6.2 (6C131e), Swift 1.1, iOS SDK 8.2
 
 # Art
 
