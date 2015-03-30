@@ -30,12 +30,12 @@
 		94AA07811AC8AE3800FB0978 /* RoShamBoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA07691AC8AE3800FB0978 /* RoShamBoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94AA07891AC8AE5800FB0978 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94290CDC1AC486CC00882299 /* Game.swift */; };
 		94AA079A1AC8B36500FB0978 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA07991AC8B36500FB0978 /* InterfaceController.swift */; };
-		94AA079C1AC8B36500FB0978 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA079B1AC8B36500FB0978 /* NotificationController.swift */; };
 		94AA079E1AC8B36500FB0978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AA079D1AC8B36500FB0978 /* Images.xcassets */; };
 		94AA07A21AC8B36500FB0978 /* RoShamBo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */; };
 		94AA07AA1AC8B36500FB0978 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07A81AC8B36500FB0978 /* Interface.storyboard */; };
 		94AA07AC1AC8B36500FB0978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AA07AB1AC8B36500FB0978 /* Images.xcassets */; };
 		94AA07AF1AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94AA07941AC8B36500FB0978 /* RoShamBo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94AA07B81AC8CFA500FB0978 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA07B71AC8CFA500FB0978 /* ResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,12 +131,12 @@
 		94AA07971AC8B36500FB0978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94AA07981AC8B36500FB0978 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		94AA07991AC8B36500FB0978 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		94AA079B1AC8B36500FB0978 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		94AA079D1AC8B36500FB0978 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		94AA07A11AC8B36500FB0978 /* RoShamBo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RoShamBo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AA07A71AC8B36500FB0978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94AA07A91AC8B36500FB0978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		94AA07AB1AC8B36500FB0978 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94AA07B71AC8CFA500FB0978 /* ResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,7 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				94AA07991AC8B36500FB0978 /* InterfaceController.swift */,
-				94AA079B1AC8B36500FB0978 /* NotificationController.swift */,
+				94AA07B71AC8CFA500FB0978 /* ResultsController.swift */,
 				94AA079D1AC8B36500FB0978 /* Images.xcassets */,
 				94AA07961AC8B36500FB0978 /* Supporting Files */,
 			);
@@ -582,7 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94AA079C1AC8B36500FB0978 /* NotificationController.swift in Sources */,
+				94AA07B81AC8CFA500FB0978 /* ResultsController.swift in Sources */,
 				94AA079A1AC8B36500FB0978 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

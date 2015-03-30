@@ -9,6 +9,17 @@
 import WatchKit
 import Foundation
 
+import RoShamBoKit
+
+class ResultWrapper {
+    let result: Result
+    let player: Choice
+
+    init(_ result: Result, player: Choice) {
+        self.result = result
+        self.player = player
+    }
+}
 
 class InterfaceController: WKInterfaceController {
 
@@ -28,4 +39,25 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func rockTapped() {
+        play(.Rock)
+    }
+    @IBAction func paperTapped() {
+        play(.Paper)
+    }
+    @IBAction func scissorsTapped() {
+        play(.Scissors)
+    }
+    @IBAction func lizardTapped() {
+        play(.Lizard)
+    }
+    @IBAction func spockTapped() {
+        play(.Spock)
+    }
+
+    func play(c: Choice) {
+        let r = Game(player1: c, player2: Choice.random()).play()
+
+        presentControllerWithName("results", context: ResultWrapper(r, player: c))
+    }
 }

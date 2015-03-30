@@ -1,39 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--RoShamBo-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller title="RoShamBo" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RoShamBo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Choose:" textAlignment="center" id="Y1q-N3-sDh">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" id="xst-1n-1ut">
+                            <items>
+                                <button alignment="left" id="5L6-KI-CiC" userLabel="Rock">
+                                    <group key="contentGroup" width="1" alignment="left" id="dWG-oJ-phM">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="left" image="rock.png" contentMode="scaleAspectFit" id="670-LM-yus"/>
+                                            <label alignment="left" verticalAlignment="center" text="Rock" id="WIe-pa-ZD5"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.55601674320000005" green="0.55832213159999999" blue="0.71869200470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="rockTapped" destination="AgC-eL-Hgc" id="dtK-VT-ySN"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="5Lp-9f-gf2" userLabel="Paper">
+                                    <group key="contentGroup" width="1" alignment="left" id="rdp-cE-Pop">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="left" image="paper" contentMode="scaleAspectFit" id="KFW-P0-cVw"/>
+                                            <label alignment="left" verticalAlignment="center" text="Paper" textAlignment="right" id="Kel-Do-9zb">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.55601674320000005" green="0.55832213159999999" blue="0.71869200470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="paperTapped" destination="AgC-eL-Hgc" id="gkg-6w-cad"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="RI5-EU-tiu" userLabel="Scissors">
+                                    <group key="contentGroup" width="1" alignment="left" id="hhW-Vw-dP7">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="left" image="scissors" contentMode="scaleAspectFit" id="NQU-3g-jD7"/>
+                                            <label alignment="left" verticalAlignment="center" text="Scissors" textAlignment="left" id="XcB-vP-Amm"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.55601674320000005" green="0.55832213159999999" blue="0.71869200470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="scissorsTapped" destination="AgC-eL-Hgc" id="s7p-4X-E6d"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="Qht-t4-8aJ" userLabel="Lizard">
+                                    <group key="contentGroup" width="1" alignment="left" id="4fZ-Sz-3La">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="left" image="lizard" contentMode="scaleAspectFit" id="r1O-el-RxL"/>
+                                            <label alignment="left" verticalAlignment="center" text="Lizard" id="gYg-yA-ZO2"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.55601674320000005" green="0.55832213159999999" blue="0.71869200470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="lizardTapped" destination="AgC-eL-Hgc" id="hk6-uo-UsY"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="Tvp-cp-uMM" userLabel="Spock">
+                                    <group key="contentGroup" width="1" alignment="left" id="JvY-Ly-ImQ">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="left" image="spock" contentMode="scaleAspectFit" id="q5e-pM-Uo7"/>
+                                            <label alignment="left" verticalAlignment="center" text="Spock" id="R8y-AG-dhV"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.55601674320000005" green="0.55832213159999999" blue="0.71869200470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="spockTapped" destination="AgC-eL-Hgc" id="sda-EZ-wYp"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Results-->
+        <scene sceneID="ZTp-tt-h1m">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller identifier="results" title="Results" id="ju5-kz-eY2" customClass="ResultsController" customModule="RoShamBo_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="b6x-sD-GSi">
+                            <items>
+                                <group width="1" alignment="left" id="U6j-Dm-ymy">
+                                    <items>
+                                        <imageView width="45" height="45" alignment="left" image="scissors.png" contentMode="scaleAspectFit" id="5hl-yS-Oim">
+                                            <variation key="device=watch42mm" height="50" width="50"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="Scissors" id="Uxk-A4-AoU">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label width="1" alignment="center" text="decapitate" textAlignment="center" numberOfLines="2" id="G7f-P3-gt1" userLabel="Summary">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <group width="1" alignment="left" id="AKi-cg-6qj">
+                                    <items>
+                                        <label alignment="right" verticalAlignment="center" text="Lizard" textAlignment="right" id="vr0-ps-z40">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <imageView width="45" height="45" alignment="right" image="lizard.png" contentMode="scaleAspectFit" id="YuU-7F-DVV">
+                                            <variation key="device=watch42mm" height="50" width="50"/>
+                                        </imageView>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator width="1" alignment="center" verticalAlignment="center" id="xqU-Tg-3a7">
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label width="1" alignment="center" verticalAlignment="center" text="You win!" textAlignment="center" id="MYi-NX-gRV" userLabel="Win/Lose">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="loserImage" destination="YuU-7F-DVV" id="1wy-1Y-3cb"/>
+                        <outlet property="loserLabel" destination="vr0-ps-z40" id="0FR-Wy-WAU"/>
+                        <outlet property="summaryLabel" destination="MYi-NX-gRV" id="pTW-0S-atW"/>
+                        <outlet property="verbLabel" destination="G7f-P3-gt1" id="2zo-qB-5PA"/>
+                        <outlet property="winnerImage" destination="5hl-yS-Oim" id="x95-sE-C07"/>
+                        <outlet property="winnerLabel" destination="Uxk-A4-AoU" id="meI-6H-W2X"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="468" y="307"/>
         </scene>
     </scenes>
 </document>
