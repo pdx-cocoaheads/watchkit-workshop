@@ -1,17 +1,17 @@
 //
-//  RoShamBo.swift
-//  RoShamBoTests
+//  RoShamBoKitTests.swift
+//  RoShamBoKitTests
 //
-//  Created by Ryan Arana on 3/25/15.
+//  Created by Ryan Arana on 3/29/15.
 //  Copyright (c) 2015 PDX-iOS. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-import RoShamBo
+import RoShamBoKit
 
-class RoShamBoTests: XCTestCase {
+class RoShamBoKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -82,5 +82,5 @@ class RoShamBoTests: XCTestCase {
         XCTAssert(vs(.Scissors).winner == .Spock, "Spock should defeat Scissors")
         XCTAssert(vs(.Rock).winner == .Spock, "Spock should defeat Rock")
     }
-    
+
 }

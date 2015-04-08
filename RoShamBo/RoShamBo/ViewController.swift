@@ -8,6 +8,8 @@
 
 import UIKit
 
+import RoShamBoKit
+
 class ViewController: UIViewController {
 
     var playerChoice: Choice? {
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
     }
 
     func getButtonForChoice(choice: Choice) -> UIButton! {
-        return view.viewWithTag(choice.rawValue) as UIButton!
+        return view.viewWithTag(choice.rawValue) as! UIButton!
     }
 
     func playGame() {
