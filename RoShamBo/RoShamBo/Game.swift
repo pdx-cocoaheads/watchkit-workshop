@@ -92,8 +92,8 @@ public enum Choice: Int {
 
 
 public struct Result {
-    public let winner: Choice?
-    public let loser: Choice?
+    public let winner: Choice!
+    public let loser: Choice!
     public let draw: Bool
 
     public init(choices p1: Choice, p2: Choice) {
@@ -122,11 +122,7 @@ public struct Result {
 		if draw {
 			return "The game ended in a draw"
 		} else {
-			if let winner = winner, let loser = loser {
-				return "\(winner.name.capitalizedString) \(winner.verb(loser)) \(loser.name.capitalizedString)."
-			} else {
-				return "There was an error"
-			}
+			return "\(winner.name.capitalizedString) \(winner.verb(loser)) \(loser.name.capitalizedString)."
 		}
     }
 }

@@ -73,21 +73,21 @@ class ViewController: UIViewController {
             let playerWon = r.winner == playerChoice!
             txt = playerWon ? "You win!" : "You lose!"
 
-            var winnerImageName = r.winner?.name
-            var loserImageName = r.loser?.name
+            var winnerImageName = r.winner.name
+            var loserImageName = r.loser.name
 
             if playerWon {
-                winnerImageName = "\(winnerImageName!)-highlighted"
+                winnerImageName = "\(winnerImageName)-highlighted"
             } else {
-                loserImageName = "\(loserImageName!)-highlighted"
+                loserImageName = "\(loserImageName)-highlighted"
             }
 			
 			println(winnerImageName)
 			println(loserImageName)
 
-            winnerImage.image = UIImage(named: winnerImageName!)
-            loserImage.image = UIImage(named: loserImageName!)
-            verbLabel.text = r.winner!.verb(r.loser!)
+            winnerImage.image = UIImage(named: winnerImageName)
+            loserImage.image = UIImage(named: loserImageName)
+            verbLabel.text = r.winner.verb(r.loser)
         }
 
         resultsLabel.text = txt
