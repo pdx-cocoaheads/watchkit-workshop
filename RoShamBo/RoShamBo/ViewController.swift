@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }
 
     func getButtonForChoice(choice: Choice) -> UIButton! {
-        return view.viewWithTag(choice.rawValue) as UIButton!
+        return view.viewWithTag(choice.rawValue) as! UIButton!
     }
 
     func playGame() {
