@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     }
 
     func getButtonForChoice(choice: Choice) -> UIButton! {
-        return view.viewWithTag(choice.rawValue) as UIButton!
+        return view.viewWithTag(choice.rawValue) as! UIButton!
     }
 
     func playGame() {
@@ -73,16 +73,21 @@ class ViewController: UIViewController {
             let playerWon = r.winner == playerChoice!
             txt = playerWon ? "You win!" : "You lose!"
 
-            var winnerImageName = r.winner.name
-            var loserImageName = r.loser.name
+            var winnerImageName = r.winner?.name
+            var loserImageName = r.loser?.name
+
             if playerWon {
-                winnerImageName = "\(winnerImageName)-highlighted"
+                winnerImageName = "\(winnerImageName!)-highlighted"
             } else {
-                loserImageName = "\(loserImageName)-highlighted"
+                loserImageName = "\(loserImageName!)-highlighted"
             }
-            winnerImage.image = UIImage(named: winnerImageName)
-            loserImage.image = UIImage(named: loserImageName)
-            verbLabel.text = r.winner.verb(r.loser)
+			
+			println(winnerImageName)
+			println(loserImageName)
+
+            winnerImage.image = UIImage(named: winnerImageName!)
+            loserImage.image = UIImage(named: loserImageName!)
+            verbLabel.text = r.winner!.verb(r.loser!)
         }
 
         resultsLabel.text = txt
