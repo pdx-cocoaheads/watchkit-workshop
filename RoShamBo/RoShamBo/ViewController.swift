@@ -81,9 +81,6 @@ class ViewController: UIViewController {
             } else {
                 loserImageName = "\(loserImageName)-highlighted"
             }
-			
-			println(winnerImageName)
-			println(loserImageName)
 
             winnerImage.image = UIImage(named: winnerImageName)
             loserImage.image = UIImage(named: loserImageName)
